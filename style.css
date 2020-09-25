@@ -1,0 +1,43 @@
+:root{
+    --speed:5
+}
+.machine{
+    width: 1000px;
+    height: 500px;
+    margin: 50px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+}
+.slot{
+    
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: cornsilk;
+    margin-top: 100px;
+
+    overflow: hidden;
+  
+}
+.slot > .value{
+    text-align: center;
+    line-height: 300px;
+    font-size: 100px;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration:calc(1s/var(--speed));
+}
+@keyframes bounce{
+0%{
+transform: translateY(-150px);
+}
+100%{
+    transform: translateY(150px);
+}
+}
+#inpspeed{
+    font-size: 20px;
+    width: 50px;
+    margin-left: 50px;
+}
